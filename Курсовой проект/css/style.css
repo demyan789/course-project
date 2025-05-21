@@ -1,0 +1,555 @@
+@charset "UTF-8";
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  background-color: #2e2e2e;
+  color: #333;
+  height: 100vh;
+}
+body.fade {
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+body.visible {
+  opacity: 1;
+}
+
+html, body {
+  height: 100vh;
+  margin: 0;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+a:hover {
+  opacity: 1;
+  color: #ffeb3b;
+}
+
+header {
+  background: black;
+  color: #ffffff;
+  padding: 20px;
+}
+header .logo {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+header .logo img {
+  width: 40px;
+  height: 40px;
+}
+header .logo span {
+  font: 24px "Segoe UI", sans-serif;
+  color: #ffffff;
+}
+@media (max-width: 768px) {
+  header .logo span {
+    font-size: 18px;
+  }
+}
+
+nav a {
+  color: #ffffff;
+  margin: 0 10px;
+  font: 16px "Segoe UI", sans-serif;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  background-color: rgb(41, 36, 36);
+  color: #ffffff;
+  padding: 40px 0;
+  font-family: Arial, sans-serif;
+}
+footer .footer_flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  footer .footer_flex {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+footer p {
+  margin-top: 30px;
+  font-size: 14px;
+  text-align: center;
+  opacity: 0.8;
+}
+footer .contact {
+  margin: 20px 0;
+}
+footer .contact h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  position: relative;
+}
+footer .contact h3::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background-color: #ffffff;
+}
+footer .contact ul {
+  list-style: none;
+  padding: 0;
+}
+footer .contact li {
+  margin: 10px 0;
+  opacity: 0.9;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.banner {
+  position: relative;
+  color: #ffffff;
+  text-align: center;
+  padding: 100px 20px;
+}
+.banner h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+.banner p {
+  font-size: 24px;
+}
+
+.features {
+  color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.feature {
+  background: #000;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.info-block {
+  display: flex;
+  background: #333;
+  color: #ffffff;
+  padding: 40px 20px;
+  margin: 20px 0;
+  align-items: center;
+  gap: 20px;
+}
+.info-block .info-text {
+  flex: 1;
+}
+.info-block .info-text h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.info-block .info-text p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+.info-block .more-link {
+  display: inline-block;
+  margin-top: 20px;
+  color: #caa74d;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+}
+.info-block .more-link::after {
+  content: "→";
+  margin-left: 8px;
+  transition: margin-left 0.3s;
+}
+.info-block .more-link:hover::after {
+  margin-left: 14px;
+}
+.info-block .info-image img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.card {
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 250px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 400px;
+  padding: 16px;
+  box-sizing: border-box;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.card h3 {
+  font-size: 16px;
+  margin: 10px;
+  color: #ffffff;
+}
+.card p {
+  margin: 0 10px 10px;
+  font-size: 14px;
+  color: #ccc;
+}
+.card .price {
+  color: #ffcc00;
+  font-weight: bold;
+}
+.n{
+  list-style-type: none;
+}
+.card img {
+  width: 100%;
+  height: 160px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background: #fff;
+  border-radius: 4px;
+  transition: transform 0.4s ease;
+  display: block;
+}
+.card:hover img {
+  transform: scale(1.1);
+}
+.card button {
+  background-color: transparent;
+  border: 1px solid #ffcc00;
+  color: #ffcc00;
+  margin: auto;
+  padding: 0 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 80%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card button:hover {
+  background-color: #ffcc00;
+  color: #000;
+}
+
+.contacts-main {
+  background-color: #2b2b2b;
+  padding: 40px 20px;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+.contacts-main .contacts-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+.contacts-main .contacts-block {
+  flex: 1;
+  min-width: 250px;
+}
+.contacts-main .contacts-block h2, .contacts-main .contacts-block h3 {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+.contacts-main .contacts-block p, .contacts-main .contacts-block li {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 5px;
+}
+.contacts-main .contacts-block ul {
+  list-style: none;
+  padding-left: 0;
+}
+.contacts-main .contacts-block .contacts-links a {
+  color: #ffd700;
+  text-decoration: none;
+}
+.contacts-main .contacts-block .contacts-links a:hover {
+  text-decoration: underline;
+}
+.contacts-main .contacts-logo {
+  width: 120px;
+  margin-bottom: 10px;
+}
+.contacts-main .contacts-map {
+  margin-top: 40px;
+}
+.contacts-main .contacts-map h2 {
+  color: #ffffff;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+}
+
+input, button {
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #000;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  max-height: 1000px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 20px;
+}
+
+#object-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 0;
+  background: #000;
+}
+
+.nav a {
+  margin: 0 12px;
+  font: 16px "Segoe UI", sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+}
+.nav a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .wrapper {
+    padding: 0 24px;
+  }
+}
+@media (max-width: 1024px) {
+  .promo-block {
+    flex-direction: column;
+    height: auto;
+  }
+  .promo-block .promo-image,
+  .promo-block .promo-form {
+    width: 100%;
+  }
+  .promo-block .promo-image {
+    height: 300px;
+  }
+  .promo-block .promo-image img {
+    height: 100%;
+  }
+  .promo-block .promo-form {
+    padding: 40px 20px;
+  }
+}
+@media (max-width: 600px) {
+  .promo-form h2 {
+    font-size: 20px;
+  }
+  .promo-form p {
+    font-size: 14px;
+  }
+  .promo-form input, .promo-form select, .promo-form button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+.promo-block {
+  position: relative;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+  overflow: hidden;
+}
+.promo-block .promo-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.promo-block .promo-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.promo-block .promo-form {
+  position: relative;
+  z-index: 1;
+  width: 400px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 60px 40px;
+  margin-left: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.promo-block .promo-form h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+.promo-block .promo-form p {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+.promo-block .promo-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.promo-block .promo-form input, .promo-block .promo-form select {
+  padding: 12px;
+  border: none;
+  border-bottom: 1px solid #ffd11a;
+  background: transparent;
+  color: #ffffff;
+  font-size: 16px;
+}
+.promo-block .promo-form input::-moz-placeholder, .promo-block .promo-form select::-moz-placeholder {
+  color: #aaa;
+}
+.promo-block .promo-form input::placeholder, .promo-block .promo-form select::placeholder {
+  color: #aaa;
+}
+.promo-block .promo-form select {
+  background-color: transparent;
+  color: gray;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.promo-block .promo-form button {
+  padding: 12px;
+  background: #ffd11a;
+  color: black;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.promo-block .promo-form button:hover {
+  background: #e6b800;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+#burger {
+    display: none;
+}
+.close_menu {
+    display: none;
+}
+@media (max-width: 768px){
+  .close_menu {
+    text-align: center;
+    display: block;
+  }
+    a{
+        width: 99%;
+        height: 40px;
+    }
+    .menu_item{
+        display: block;
+        position: fixed;
+        width: 100%;
+        left: -110%;
+        border: none;
+    }
+    .menu{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .menu_btn{
+        position: relative;
+        left: -44%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .menu_btn > span::after{
+        content: "\2261";
+        position: absolute;
+        right: 10px;
+    }
+    #burger {
+    display: none;
+}
+    #burger:checked~ .menu_item{
+        position: static;
+    }
+    #burger:checked~ .menu_item > label{
+        display: block;
+        margin-top: 10px;
+    }
+    #burger:not(:checked)~ .menu_btn > span::after{
+        content: "\2573";
+    }
+  }/*# sourceMappingURL=test.css.map */

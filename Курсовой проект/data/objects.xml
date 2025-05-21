@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects>
+     <object>
+    <id>1</id>
+    <title>Новая Боровая</title>
+    <image>img/1.png</image>
+    <price>66 994</price>
+    <area>от 1 346 $. за</area>
+    <desc>Минск, р-н Копище, ул. Николая Камова</desc>
+  </object>
+     <object>
+    <id>2</id>
+    <title>Минск Мир. Квартал Австралия и Океания</title>
+    <image>img/2.png</image>
+    <price>78 808</price>
+    <area>от 1 197 $. за</area>
+    <desc>Минск, р-н Октябрьский, ул. Савицкого</desc>
+  </object>
+     <object>
+    <id>3</id>
+    <title>Минск Мир. Квартал Центральная Европа</title>
+    <image>img/3.png</image>
+    <price>86 758</price>
+    <area>от 2 258 $. за</area>
+    <desc>Минск, р-н Октябрьский, ул. Мира проспект</desc>
+  </object>
+     <object>
+    <id>4</id>
+    <title>ЖК Зеленая Гавань</title>
+    <image>img/4.png</image>
+    <price>46 239</price>
+    <area>от 1 343 $. за</area>
+    <desc>Минск, р-н Колодищи, ул. Лавандовая</desc>
+  </object>
+     <object>
+    <id>5</id>
+    <title>ЖК Левада</title>
+    <image>img/5.png</image>
+    <price>104 240</price>
+    <area>от 1 690 $. за</area>
+    <desc>Минск, р-н Центральный, ул. Нововиленская</desc>
+  </object>
+     <object>
+    <id>6</id>
+    <title>Продажа уютного дома в г. Логойск</title>
+    <image>img/6.png</image>
+    <price>199 000</price>
+    <area>162.6</area>
+    <desc>Логойский район, город Логойск, Красивая улица</desc>
+  </object>
+     <object>
+    <id>7</id>
+    <title>Дом в 24 км от Минска</title>
+    <image>img/7.png</image>
+    <price>140 000</price>
+    <area>193.4 </area>
+    <desc>Узденский район, Озерский сельсовет, агрогородок Озеро, Жасминовая улица</desc>
+  </object>
+     <object>
+    <id>8</id>
+    <title>Продается уникальный объект в Степянке</title>
+    <image>img/8.png</image>
+    <price>465 000</price>
+    <area>533</area>
+    <desc>Минск, Полярная улица</desc>
+  </object>
+    <object>
+    <id>9</id>
+    <title>Современный 1-этажный коттедж в Минске!</title>
+    <image>img/9.png</image>
+    <price>189 000</price>
+    <area>103.9</area>
+    <desc>Минск, переулок Болотникова</desc>
+  </object>
+    <object>
+    <id>10</id>
+    <title>Продается коттедж</title>
+    <image>img/10.png</image>
+    <price>283 000</price>
+    <area>238.4</area>
+    <desc>Минский район, Горанский сельсовет, деревня Звенячи, Зорная улица</desc>
+  </object>
+</objects>

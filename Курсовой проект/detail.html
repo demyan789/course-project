@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Агентство недвижимости</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <span>Ваш&nbsp;Дом</span>
+            <img src="img/logo.svg" alt="Логотип">
+        </div>
+        <div class="menu_box">
+            <input type="checkbox" id="burger">
+            <label for="burger" class="menu_btn"></label>
+            <label for="burger" class="close_menu">≡</label>
+            <div class="menu_item">
+            <label><a href="index.html">Главная</a></label>
+            <label><a href="objects.html">Объекты</a></label>
+            <label><a href="about.html">О компании</a></label>
+            <label><a href="contacts.html">Контакты</a></label>
+             </div>
+        </div>
+    </header>
+
+    <main>
+        <img id="object-img" src="" alt="Фото объекта">
+        <h2 id="object-title"></h2>
+        <form id="order-form">
+            <input type="text" id="phone" name="phone" placeholder="Номер телефона" required>
+            <input type="text" id="name" name="name" placeholder="Имя" required>
+            <button type="submit">Оставить заявку</button>
+        </form>
+        
+        <p id="success-message" style="display: none; color: green;">Заявка отправлена!</p>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer_flex">
+                <div class="contact">
+                    <h3>Контакты</h3>
+                    <ul>
+                        <li>
+                            <div class="logo">
+                                <span>Ваш&nbsp;Дом</span>
+                                <img src="img/logo.svg" alt="Логотип">
+                            </div>
+                        </li>
+                        <li><a href="tel:+375 17 365 73 22">+375&nbsp;(17)&nbsp;365&#8209;73&#8209;32</a></li>
+                        <li><a href="mailto:vashdom@gmail.com">vashdom@gmail.com</a></li>
+                    </ul>
+                </div>
+                <li class="n">
+                    <div class="contacts-block address-block">
+                        <h2>Адрес</h2>
+                        <p>Минск, проспект Независимости, 32А, стр. 4</p>
+                        <h3>Время работы:</h3>
+                        <ul>
+                          <li>Пн — Пт: с 9:00 до 22:00</li>
+                          <li>Сб — Вс: с 9:00 до 16:00</li>
+                        </ul>
+                      </div>
+                </li>
+            </div>
+        </div>
+        <p>&copy; 2025 Агентство недвижимости</p>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
